@@ -1,0 +1,20 @@
+{
+  "name": "recipe-book",
+  "version": "1.0.0",
+  "description": "An app that stores user recipes on the dashboard",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zihaozhang1/recipe-book.git"
+  },
+  "author": "Zihao Zhang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zihaozhang1/recipe-book/issues"
+  },
+  "homepage": "https://github.com/zihaozhang1/recipe-book#readme"
+}
