@@ -1,5 +1,4 @@
 
-// Second attempt at connection
 const Sequelize = require('sequelize');
 
 require('dotenv').config();

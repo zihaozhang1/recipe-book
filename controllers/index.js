@@ -1,16 +1,22 @@
-  
-const router = require('express').Router();
+const router = require("express").Router();
 
-const apiRoutes = require('./api');
-const homeRoutes = require('./home-routes.js');
+// Routes for homepage/login
 
+router.get("/", (req, res) => {
+  console.log(req.session);
+  if (req.session.loggedIn) {
+    res.redirect("/dashboard");
+    return;
+  }
+  res.render("login");
+});
 
-router.use('/api', apiRoutes);
-router.use('/', homeRoutes);
-
-
-router.use((req, res) => {
-    res.redirect("/");
+router.get("/signup", (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect("/dashboard");
+    return;
+  }
+  res.render("signup");
 });
 
 module.exports = router;
