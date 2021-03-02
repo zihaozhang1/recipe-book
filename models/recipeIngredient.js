@@ -28,7 +28,7 @@ recipeIngredient.init(
                 key: 'id'
             }
         },
-        measure: {
+        amount: {
             type: DataTypes.STRING,
             allowNull: true
         },

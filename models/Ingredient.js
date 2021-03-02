@@ -5,7 +5,7 @@ const sequelize = require('../config/connection');
 // Create Ingredient model
 class Ingredient extends Model {}
 
-// Create fields and columns for Ingredient model
+// Create fields and columns for Inventory model
 Ingredient.init(
     {
         id: {
@@ -14,7 +14,7 @@ Ingredient.init(
             primaryKey: true,
             autoIncrement: true
         },
-        Ingredient_name: {
+        ingredient_name: {
             type: DataTypes.STRING,
             allowNull: false
         },
