@@ -2,11 +2,11 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 
-// Create Recipe model
-class Recipe extends Model {}
+// Create Measure model
+class Measure extends Model {}
 
 // Create fields and columns for Inventory model
-Recipe.init(
+Measure.init(
     {
         id: {
             type: DataTypes.INTEGER,
@@ -14,17 +14,9 @@ Recipe.init(
             primaryKey: true,
             autoIncrement: true
         },
-        recipe_name: {
+        measure_name: {
             type: DataTypes.STRING,
             allowNull: false
-        },
-        recipe_description: {
-            type: DataTypes.STRING,
-            allowNull: false
-        },
-        recipe_instructions: {
-            type: DataTypes.STRING,
-            allowNull: true
         },
     },
     {
@@ -32,8 +24,8 @@ Recipe.init(
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'Recipe'
+        modelName: 'Measure'
     }
 );
 
-module.exports = Recipe;
+module.exports = Measure;
