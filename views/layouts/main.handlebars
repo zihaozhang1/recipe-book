@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EaZiRecipes</title>
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"> 
+    <link rel="stylesheet" type="text/css" href="/stylesheets/tailwind.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css">
+    <script src="https://kit.fontawesome.com/23f5bfe74c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Roboto&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+
+    <main>
+        {{{ body }}}
+    </main>
+
+    <!--Toast Alert -->
+    <div class="hidden alert-toast  w-5/6 md:w-full max-w-sm" id="alert-toast">
+        <input class="hidden">
+        <label
+            class="cursor-pointer w-full p-2 bg-red h-14 rounded shadow-lg text-white">
+            <span><i class="fas fa-bell mx-3"></i>
+            <b class="mr-2">Alert!</b>
+            <span id="toast-content">content of the alert</span>
+        </label>
+    </div>
+
+    <script src="/javascript/loggin.js"></script>
+    <script src="/javascript/logout.js"></script>
+    <script src="/javascript/add-recipe.js"></script>
+    <script src="/javascript/modal.js"></script>
+    <script src="/javascript/delete.js"></script>
+
+    
+</body>
+
+</html>

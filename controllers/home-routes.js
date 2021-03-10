@@ -11,12 +11,13 @@ router.get("/", (req, res) => {
   res.render("login");
 });
 
+// Routes for signup
 router.get("/signup", (req, res) => {
   if (req.session.loggedIn) {
-    res.redirect("/dashboard");
+    res.redirect("/login");
     return;
   }
-  res.render("signup");
+  res.render("login");
 });
 
 module.exports = router;

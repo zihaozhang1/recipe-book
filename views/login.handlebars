@@ -1,0 +1,50 @@
+<div class="flex-wrap-reverse flex">
+  <div class="sm:w-1/2 w-full bg-white">
+    <div class="inset-x-0 lg:p-10">
+      <h1 class="md:pl-10 px-5 text-xl text-center text-gray-900 mt-16">DELICIOUS, SIMPLE, ELEGANT RECIPES FOR YOU TO
+        TRY TODAY</h1>
+    </div>
+    <img class="object-contain w-full" src="/images/login-image.jpg">
+  </div>
+
+  {{!-- Login --}}
+  <div> </div>
+  <div class="sm:w-1/2 bg-blue-900 bg-opacity-80 lg:h-screen w-full mb-10">
+    <div class="title lg:mt-16 mt-10">
+      <h1 class="text-5xl text-center text-gray-100">Log In</h1>
+    </div>
+
+    {{!-- Login Form --}}
+    <form class="login-form space-y-10 sm:ml-24 md:ml-48 lg:ml-24 xl:ml-36 pt-10">
+
+      <div class="input-wrapper">
+        <H6 class="shadow-sm gloria text-sm text-gray-100 pb-3">Email</H6>
+        <label for="email-login"><span class="bi bi-person-badge"></i></label>
+        <input
+          class=" gloria placeholder-gray-500 placeholder-opacity-50 border-b-2 rounded-sm focus:outline-none focus:ring-2 focus:ring-blue focus:ring-opacity-50 rounded-lg w-48 sm:w-76 md:w-96"
+          type="text" id="email-login" placeholder="Your Name" />
+      </div>
+
+      <div class="input-wrapper">
+        <H6 class="gloria placeholder-gray-500 placeholder-opacity-50 text-sm text-gray-100 pb-3">Password</H6>
+        <label for="password-login"><span class="bi bi-unlock"></i></label>
+        <input
+          class="shadow-sm gloria border-b-2 rounded-sm focus:outline-none focus:ring-2 focus:ring-blue focus:ring-opacity-50 rounded-sm w-48 sm:w-76 md:w-96"
+          type="password" id="password-login" placeholder="Password" />
+      </div>
+
+      <div>
+        <button
+          class="gloria placeholder-gray-500 placeholder-opacity-50 form-submit form-button bg-blue-light text-sm p-1.5 my-2 hover:bg-blue focus:outline-none focus:ring-2 focus:ring-blue focus:ring-opacity-50 rounded-lg"
+          type="submit">Login</button>
+      </div>
+    </form>
+
+    {{!-- to be rerouted to the signup page --}}
+    <div class="new-user text-sm lg:pt-20 pt-5 text-gray-100 text-center">
+      Would you like access to our recipes?
+      <br>
+      Click <a href="/signup" class="text-green-600">here</a> to join now!
+    </div>
+  </div>
+</div>
